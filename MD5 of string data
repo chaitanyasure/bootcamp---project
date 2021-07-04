@@ -1,0 +1,20 @@
+import hashlib
+
+# initializing string
+
+strhash = "chaitanya sure "
+
+# encoding chaitanya sure using encode()
+# then sending to md5()
+
+result = hashlib.md5(strhash.encode())
+
+# printing the equivalent hexadecimal value.
+
+print("The hexadecimal equivalent of hash is : ", end="")
+
+print(result.hexdigest())
+
+
+output:
+The hexadecimal equivalent of hash is : f6ec72d45621bba9d201a9a2884ee611
